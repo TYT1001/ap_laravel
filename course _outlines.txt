@@ -1,0 +1,15 @@
+week4
+-form convention requests
+-form validation essentials
+-getting stated with eloquent
+-route model binding
+-named routing
+-eloquent relatinships
+
+week5
+-authentications
+-autharization filters
+-middleware
+-handling user roles
+-managing laravel policies
+-fronted scoffolding
