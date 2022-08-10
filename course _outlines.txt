@@ -13,3 +13,6 @@ week5
 -handling user roles
 -managing laravel policies
 -fronted scoffolding
+
+
+creating a request file -> php artisan make:request storePostRequest

@@ -17,3 +17,7 @@ use App\Http\Controllers\HomeController as ControllersHomeController;
 */
 
 Route::resource('posts',HomeController::class);
+
+Route::get('/home',function(){
+    return 'Hi';
+});

@@ -10,17 +10,20 @@
             Contents
         </div>
 
+
         @foreach ($posts as $post )
             <div class="card-body">
                 <h5 class="card-title ">{{$post->name}}</h5>
                 <p class="card-text">{{$post->description}}</p>
-                <a href="/posts/{{$post->id}}" class="btn btn-primary">View</a>
-                <a href="/posts/{{$post->id}}/edit" class="btn btn-warning">Edit</a>
+                <div class="input-group">
+                <a href="/posts/{{$post->id}}"><button class="btn btn-primary ">View</button></a>
+                <a href="/posts/{{$post->id}}/edit"><button class="btn btn-warning mx-3">Edit</button></a>
                 <form action="/posts/{{$post->id}}" method="post">
                     @csrf
                     @method('DELETE')
                     <button class="btn btn-danger" type="submit">Delete</button>
                 </form>
+            </div>
             </div><hr>
         @endforeach
 
